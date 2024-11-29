@@ -1,0 +1,220 @@
+@import "../../assets/style/app";
+
+.header {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+
+  @include desktop {
+    padding: 16px 64px 0;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      img {
+        display: block;
+
+        &:nth-child(1) {
+          width: 0.3 * 141px;
+          height: 0.3 * 128px;
+
+          @include desktop {
+            width: 0.6 * 141px;
+            height: 0.6 * 128px;
+          }
+        }
+
+        &:nth-child(2) {
+          width: 0.3 * 449px;
+          height: 0.3 * 142px;
+
+          @include desktop {
+            width: 0.6 * 449px;
+            height: 0.6 * 142px;
+          }
+        }
+      }
+    }
+
+    .rightPart {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .playBtn {
+        @include button;
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+
+        @include desktop {
+          margin-right: 0;
+          margin-left: 32px;
+          width: 50px;
+          height: 50px;
+        }
+
+        svg {
+          width: 32px;
+          height: 32px;
+
+          @include desktop {
+            width: 50px;
+            height: 50px;
+          }
+
+          path {
+            fill: #FFF;
+            transition: 0.3s;
+          }
+        }
+
+        &_play {
+          svg path {
+            fill: lime;
+          }
+        }
+      }
+
+      .burgerBtn {
+        @include button;
+        @include onlyMobile();
+
+        span {
+          @include Junegull;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          text-transform: uppercase;
+          color: #fff;
+          transition: 0.3s;
+
+          @include desktop {
+            font-size: 21px;
+          }
+        }
+
+        &_open {
+          span {
+            color: lime;
+          }
+        }
+      }
+
+      .links {
+        @include onlyDesktop(flex);
+
+        .link {
+          text-decoration: none;
+          @include Junegull;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          text-transform: uppercase;
+          color: #fff;
+
+          @include desktop {
+            font-size: 21px;
+          }
+
+          &:not(:first-child) {
+            margin-left: 12px;
+
+            @include desktop {
+              margin-left: 32px;
+            }
+          }
+        }
+      }
+
+      .buyDesktop {
+        @include onlyDesktop();
+        margin-left: 16px;
+
+        img {
+          display: block;
+          width: 100%;
+          max-width: 0.5 * 317px;
+          height: auto;
+
+          @include desktop {
+            max-width: 100%;
+            width: 317px;
+            height: 77px;
+          }
+        }
+      }
+    }
+  }
+
+  .socialLinks {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 16px;
+
+    @include desktop {
+      margin-top: 32px;
+    }
+
+    .socialLink {
+      display: block;
+      border: 1px solid #000;
+      width: 40px;
+      height: 40px;
+
+      @include desktop {
+        width: 80px;
+        height: 80px;
+      }
+
+      &:nth-child(2) {
+        margin-top: 12px;
+
+        @include desktop {
+          margin-top: 24px;
+        }
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+
+        @include desktop {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+    }
+
+    .buyMobile {
+      @include onlyMobile();
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: 16px;
+
+      img {
+        display: block;
+        width: 100%;
+        max-width: 0.5 * 317px;
+        height: auto;
+      }
+    }
+
+  }
+
+
+}

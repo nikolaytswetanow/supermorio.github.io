@@ -1,0 +1,132 @@
+@import "../../assets/style/app";
+
+.firstScreen {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .top {
+    flex-grow: 1;
+    position: relative;
+    z-index: 1;
+    background: url("../../assets/jpeg/background-first-screen.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .title {
+      @include absoluteCenter;
+      width: 60vw;
+      height: auto;
+
+      @include desktop {
+        width: 45vw;
+      }
+    }
+
+    .left {
+      position: absolute;
+      left: vwD(179);
+      bottom: 0;
+      //top: 50%;
+      //transform: translateY(-50%);
+      width: vwD(498);
+      height: vwD(498);
+    }
+
+    .right {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      //top: 50%;
+      //transform: translateY(-50%);
+      width: vwD(556);
+      height: vwD(512);
+    }
+  }
+
+  .bottom {
+    position: relative;
+    z-index: 1;
+    background: url("../../assets/jpeg/grid.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 16px;
+
+    @include desktop {
+      padding: 0;
+      flex-direction: row;
+      justify-content: center;
+      height: 160px;
+    }
+
+    .bottomFigures {
+      display: block;
+      height: 40px;
+      width: auto;
+
+      @include desktop {
+        height: 160px;
+      }
+    }
+
+    .figures {
+      display: flex;
+      align-items: center;
+
+      .figure {
+        height: 80px;
+
+        @include desktop {
+          width: 153px;
+          height: 170px;
+        }
+      }
+
+      .middle {
+        height: 40px;
+
+        @include desktop {
+          width: 72px;
+          height: 60px;
+        }
+      }
+    }
+
+
+
+    .address {
+      border-radius: 10px;
+      padding: 8px 28px;
+      background: #1a5bb3;
+      margin: 8px 0;
+
+      @include desktop {
+        margin: 0;
+      }
+
+      span {
+        @include Junegull;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        text-align: center;
+        color: #fff;
+        word-break: break-all;
+
+        @include desktop {
+          font-size: 27px;
+        }
+      }
+
+    }
+
+  }
+
+
+}

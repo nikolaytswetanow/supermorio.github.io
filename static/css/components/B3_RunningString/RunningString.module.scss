@@ -1,0 +1,42 @@
+@import "../../assets/style/app";
+
+.runningString {
+  background: url("../../assets/jpeg/grid.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+
+  @include desktop {
+    height: 170px;
+  }
+
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  img {
+    display: flex;
+
+    &:nth-child(1) {
+      height: 100px;
+      width: auto;
+
+      @include desktop {
+        height: 170px;
+      }
+    }
+
+    &:nth-child(2) {
+      height: 180px;
+      width: auto;
+
+      @include desktop {
+        height: 300px;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,321 @@
+@import "../../assets/style/app";
+
+.aboot {
+  overflow: hidden;
+  background: url("../../assets/jpeg/background-first-screen.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include desktop {
+    height: vwD(1180);
+  }
+
+  .mask {
+    @include container;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(91, 212, 236, 0.91) 0%, rgba(15, 94, 197, 0.91) 100%);
+
+    .innerMobile {
+      @include inner;
+      @include onlyMobile();
+      padding-top: 28px;
+
+      @include desktop {
+        padding-top: 56px;
+      }
+
+
+      .title {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+
+        @include desktop {
+          width: 700px;
+          max-width: 100%;
+        }
+      }
+
+      .dollar_morio {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+
+        @include desktop {
+          width: 450px;
+          max-width: 100%;
+        }
+      }
+
+
+      .texts {
+        margin-top: 32px;
+        width: 100%;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include desktop {
+          margin-top: 64px;
+          width: 700px;
+          max-width: 100%;
+        }
+
+        p {
+          @include Junegull;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 90%;
+          color: #fff;
+
+          @include desktop {
+            font-size: 35px;
+          }
+
+          &:nth-child(2) {
+            margin-top: 16px;
+          }
+        }
+      }
+
+      .picturesWrapper {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include desktop {
+          flex-direction: row;
+
+          margin-top: 64px;
+        }
+
+        .pictures {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          @include desktop {
+            flex-shrink: 0;
+            padding-bottom: 32px;
+          }
+
+          .pic1, .pic2 {
+            display: block;
+            width: 100%;
+            max-width: 540px;
+
+            @include desktop {
+              max-width: 100%;
+              width: 540px;
+            }
+          }
+
+          .pic2 {
+            margin-top: 16px;
+
+            @include desktop {
+              margin-top: 32px;
+            }
+          }
+
+          .arrow {
+            position: absolute;
+            width: 375px;
+            height: auto;
+            bottom: -10px;
+            right: -130px;
+
+            @include desktop {
+              width: 610px;
+              bottom: 55px;
+              right: -205px;
+            }
+          }
+
+        }
+
+        .gifs {
+          position: relative;
+          width: 200px;
+          margin-top: 100px;
+
+          @include desktop {
+            width: 1200px - 540px;
+            align-self: flex-end;
+          }
+
+          @include desktop {
+            flex-grow: 1;
+          }
+
+          .mario {
+            display: block;
+            width: 200px;
+            //margin-left: auto;
+            //margin-right: auto;
+
+            @include desktop {
+              width: 1200px - 540px;
+              //margin-left: 0;
+              //margin-right: 0;
+            }
+
+          }
+
+          .speech {
+            position: absolute;
+            bottom: 5px;
+            left: -55px;
+            width: 165px;
+
+            @include desktop {
+              bottom: 65px;
+              left: -55px;
+              width: 350px;
+            }
+
+          }
+
+          .tears {
+            display: block;
+            position: absolute;
+            width: 10px;
+            left: 55px;
+            top: 75px;
+
+            @include desktop {
+              width: 25px;
+              left: 180px;
+              top: 240px;
+            }
+          }
+
+          .heart {
+            display: block;
+            position: absolute;
+            width: 165px;
+            left: 45px;
+            top: -150px;
+
+            @include desktop {
+              width: 540px;
+              left: 45px;
+              top: -500px;
+
+            }
+
+          }
+        }
+
+      }
+
+
+    }
+
+    .innerDesktop {
+      @include onlyDesktop;
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .title {
+        position: absolute;
+        top: vwD(47);
+        left: vwD(630);
+        width: vwD(692);
+        height: vwD(234);
+      }
+
+      .dollar_morio {
+        position: absolute;
+        width: vwD(449);
+        height: vwD(142);
+        top: vwD(282);
+        left: vwD(760);
+      }
+
+      .pic1 {
+        position: absolute;
+        width: vwD(542);
+        height: vwD(451);
+        top: vwD(126);
+        left: vwD(57);
+      }
+
+      .pic2 {
+        position: absolute;
+        width: vwD(842);
+        height: vwD(796);
+        top: vwD(416);
+        left: vwD(219);
+      }
+
+      .texts {
+        position: absolute;
+        top: vwD(450);
+        left: vwD(680);
+        width: vwD(741);
+
+        p {
+          font-weight: 700;
+          font-size: vwD(35);
+          line-height: 90%;
+          color: #fff;
+          //backdrop-filter: blur(72px);
+
+          &:nth-child(2) {
+            margin-top: vwD(35);
+          }
+        }
+      }
+
+      .mario {
+        position: absolute;
+        width: vwD(721);
+        height: vwD(635);
+        bottom: 0;
+        right: 0;
+      }
+
+      .speech {
+        position: absolute;
+        width: vwD(585);
+        height: vwD(180);
+        top: vwD(915);
+        left: vwD(803);
+      }
+
+      .heart {
+        position: absolute;
+        width: vwD(372);
+        height: vwD(451);
+        top: vwD(207);
+        right: vwD(74);
+      }
+
+      .tears {
+        position: absolute;
+        width: vwD(83);
+        height: vwD(341);
+        top: vwD(795);
+        right: vwD(458);
+      }
+
+    }
+
+
+  }
+
+
+}

@@ -1,0 +1,42 @@
+@import "../../assets/style/app";
+
+.burgerMenu {
+  @include centerColumn;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1a5bb3;
+  transform: translateX(101%);
+  transition: 0.3s;
+  overflow: hidden;
+
+  &_open {
+    transform: translateX(0);
+  }
+
+  .links {
+    @include centerColumn;
+
+    .link {
+      text-decoration: none;
+      @include Junegull;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 150%;
+      text-transform: uppercase;
+      color: #fff;
+
+      @include desktop {
+        font-size: 21px;
+      }
+
+      &:not(:first-child) {
+        margin-top: 32px;
+      }
+    }
+  }
+
+}

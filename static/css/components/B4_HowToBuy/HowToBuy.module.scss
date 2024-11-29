@@ -1,0 +1,207 @@
+@import "../../assets/style/app";
+
+.howToBuy {
+  overflow: hidden;
+  background: url("../../assets/jpeg/background-first-screen.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .mask {
+    @include container;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(91, 212, 236, 0.91) 0%, rgba(15, 94, 197, 0.91) 100%);
+
+    .inner {
+      @include inner;
+      padding-top: 28px;
+      padding-bottom: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include desktop {
+        padding-top: 56px;
+        padding-bottom: 56px;
+      }
+
+      .titleWrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+          width: 270px;
+          max-width: 500px;
+
+          @include desktop {
+            max-width: 100%;
+            width: 900px;
+          }
+        }
+
+        .dollar_morio {
+          display: block;
+          width: 100%;
+          max-width: 200px;
+          height: auto;
+
+          @include desktop {
+            width: 450px;
+            max-width: 100%;
+          }
+        }
+
+        .morio {
+          position: absolute;
+          top: 28px;
+          width: 100px;
+          left: -50px;
+
+          @include desktop {
+            width: 450px;
+            left: -235px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+
+        .coin {
+          position: absolute;
+          top: 65px;
+          width: 55px;
+          right: -10px;
+
+          @include desktop {
+            top: 50%;
+            transform: translateY(-50%);
+            width: 210px;
+            right: -185px;
+          }
+        }
+      }
+
+      .description {
+        margin-top: 16px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 95%;
+        text-align: center;
+        color: #fff;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include desktop {
+          margin-top: 32px;
+          font-size: 33px;
+          width: 800px;
+        }
+      }
+
+      .items {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+        width: 100%;
+
+
+        @include desktop {
+          max-width: 100%;
+          margin-top: 64px;
+          display: grid;
+          align-items: normal;
+          grid-template-rows: repeat(2, 1fr);
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 32px;
+        }
+
+        .item {
+          display: flex;
+
+          &:not(:first-child) {
+            margin-top: 16px;
+
+            @include desktop {
+              margin-top: 0;
+            }
+          }
+
+          .question {
+            flex-shrink: 0;
+            display: block;
+            width: 40px;
+            height: 40px;
+
+            @include desktop {
+              width: 100px;
+              height: 100px;
+            }
+          }
+
+          .right {
+            margin-left: 8px;
+
+            @include desktop {
+              margin-left: 16px;
+            }
+
+            .itemTitle {
+              font-weight: 600;
+              font-size: 22px;
+              line-height: 150%;
+              letter-spacing: 0.02em;
+              text-transform: uppercase;
+              color: #fff;
+
+              @include desktop {
+                font-size: 28px;
+              }
+
+            }
+
+            .texts {
+              margin-top: 12px;
+
+              p {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 126%;
+                color: #fff;
+
+                @include desktop {
+                  font-size: 25px;
+                }
+
+                &:not(:first-child) {
+                  margin-top: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .mail {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 102%;
+        color: rgba(255, 255, 255, 0.84);
+        margin-top: 40px;
+        text-align: center;
+
+        @include desktop {
+          font-size: 32px;
+          margin-top: 80px;
+        }
+      }
+
+
+    }
+  }
+}
