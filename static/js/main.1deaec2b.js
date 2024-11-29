@@ -14838,8 +14838,8 @@
               className: ve,
               children: [
                 [
-                  { href: "https://t.me/realsopermorioportal", src: Me },
-                  { href: "https://x.com/SoperMorio_Sol", src: Ne },
+                  { href: "https://t.co/5aKrQkpSnF", src: Me },
+                  { href: "https://x.com/solanamorio", src: Ne },
                 ].map((e, t) => {
                   let { href: n, src: r } = e;
                   return (0, Aa.jsx)(
@@ -14914,7 +14914,7 @@
                 (0, Aa.jsx)("div", {
                   className: Ia,
                   children: (0, Aa.jsx)("span", {
-                    children: "CA: morQ8Ec7VmwKiZtcNa8462YtBsaPjSGaWH1shSYVMf1",
+                    children: "CA: HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
                   }),
                 }),
                 (0, Aa.jsxs)("div", {
