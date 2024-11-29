@@ -14838,7 +14838,7 @@
               className: ve,
               children: [
                 [
-                  { href: "https://t.co/5aKrQkpSnF", src: Me },
+                  { href: "https://t.me/moriosolana", src: Me },
                   { href: "https://x.com/solanamorio", src: Ne },
                 ].map((e, t) => {
                   let { href: n, src: r } = e;
