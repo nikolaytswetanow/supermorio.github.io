@@ -14783,7 +14783,7 @@
                   children: [
                     (0, Aa.jsx)("nav", {
                       className: pe,
-                      children: ["about", "toocanomix", "how to buy"].map(
+                      children: ["about", "how to buy"].map(
                         (t, n) =>
                           (0, Aa.jsx)(
                             e.Fragment,
@@ -14794,8 +14794,8 @@
                                       className: he,
                                       target: "_blank",
                                       rel: "nofollow noreferrer noopener",
-                                      href: "https://app.analytixaudit.com/soper-morio",
-                                      children: "audit",
+                                      href: "",
+                                      children: "",
                                     })
                                   : (0, Aa.jsx)(Be, {
                                       to: "/#".concat(t),
@@ -14941,7 +14941,7 @@
           className: ya({ [Wa]: !0, [qa]: t }),
           children: (0, Aa.jsx)("nav", {
             className: Va,
-            children: ["about", "toocanomix", "how to buy"].map((r, i) =>
+            children: ["about", "how to buy"].map((r, i) =>
               (0, Aa.jsx)(
                 e.Fragment,
                 {
@@ -14951,9 +14951,9 @@
                           className: Ha,
                           target: "_blank",
                           rel: "nofollow noreferrer noopener",
-                          href: "https://app.analytixaudit.com/soper-morio",
+                          href: "",
                           onClick: () => n(!t),
-                          children: "audit",
+                          children: "",
                         })
                       : (0, Aa.jsx)(
                           Be,
