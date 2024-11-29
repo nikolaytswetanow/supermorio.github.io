@@ -20214,7 +20214,7 @@
                 }),
                 (0, Aa.jsx)("p", {
                   className: od,
-                  children: "moriosolana@gmail.com",
+                  children: "",
                 }),
               ],
             }),
