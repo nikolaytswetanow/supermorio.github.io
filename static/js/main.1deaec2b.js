@@ -14809,7 +14809,7 @@
                     ),
                   }),
                   (0, Aa.jsx)("a", {
-                    href: "https://pump.fun/BqfHskRMVvpsNft1pEbjcKKaidGmzmrzTBzYuhzdpump",
+                    href: "https://pump.fun/Dh8n9Fo5zvzBtyqPhXr259xKnzKwNCvUqLBLeEz3pump",
                     target: "_blank",
                     rel: "nofollow noreferrer noopener",
                     className: _e,
@@ -14915,7 +14915,7 @@
                 (0, Aa.jsx)("div", {
                   className: Ia,
                   children: (0, Aa.jsx)("span", {
-                    children: "CA: BqfHskRMVvpsNft1pEbjcKKaidGmzmrzTBzYuhzdpump",
+                    children: "CA: Dh8n9Fo5zvzBtyqPhXr259xKnzKwNCvUqLBLeEz3pump",
                   }),
                 }),
                 (0, Aa.jsxs)("div", {
@@ -19914,7 +19914,7 @@
                     (0, Aa.jsx)("img", { src: lo, alt: "", className: to }),
                     (0, Aa.jsx)("a", {
                       className: no,
-                      href: "https://pump.fun/BqfHskRMVvpsNft1pEbjcKKaidGmzmrzTBzYuhzdpump",
+                      href: "https://pump.fun/Dh8n9Fo5zvzBtyqPhXr259xKnzKwNCvUqLBLeEz3pump",
                       target: "_blank",
                       rel: "nofollow noreferrer noopener",
                       children: (0, Aa.jsx)("img", {
